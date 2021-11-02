@@ -1,0 +1,66 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.3fr 0.5fr 1.6fr 0.6fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "head head head head"
+    "left main-center main-center right-top"
+    "left main main right-top"
+    "left main main right-bottom"
+    "foot foot foot foot";
+}
+.head {
+    grid-area: head;
+    display: flex;
+    background-color: rgb(124, 194, 152);
+    justify-content: center;
+    align-items: center;}
+
+.main-center {
+    grid-area: main-center;
+    background-color: rgb(253, 171, 171);
+    padding: 3%;}
+
+.main {
+    grid-area: main;
+    display: flex;
+    background-color: rgb(186, 131, 190);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.right-bottom {
+    grid-area: right-bottom;
+    background-color: rgb(253, 171, 171);
+    padding: 3%;}
+
+.right-top {
+    grid-area: right-top;
+    background-color: rgb(153, 245, 153);}
+
+.left {
+    grid-area: left;
+    background-color: rgb(219, 225, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: rgb(142, 247, 212);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;}
+
+.right-my-class{
+    text-align: right!important;
+    justify-content: right !important;
+    flex-direction: initial !important;
+}
+
+.under{
+    display: grid;
+}
